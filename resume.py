@@ -1,6 +1,6 @@
 college = input("Type  your college: N/a or college name ")
 location = input("Type the state you currently live in: (respond with state acronyms) ")
-languages = input("Type the languages you speak: ")
+languages = input("Type the languages you speak: (put eng for only english)")
 degree = input("Type your highest degree level: ")
 profession1 = input("Type your first job: ")
 profession2 = input("Type your second job (optional): ")
@@ -28,4 +28,8 @@ elif input(location) == ["FL", "UT", "MA", "NJ","CO"]: # top 5 best rated
 else:
     points += 1 #any other state or country
 
+if input(languages) == ["eng"]:
+    points =+ 0
+else:
+    points += 1
 print(points)
